@@ -7,7 +7,7 @@ public class Question {
     private char operator;
     private double correctAnswer;
 
-    public void randomQuestion(){
+    public void Question(){
         Random random = new Random(); //Without a seed defined, the random method uses a seed based on the system time
 
         this.operand1 = random.nextInt(100) + 1;
