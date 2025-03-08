@@ -4,7 +4,7 @@ public class MathQuiz {
     //This class runs a five question quiz and track the user score
     private int score;
 
-    public void MathQuiz(){
+    public MathQuiz(){
         this.score = 0;
     }
 
@@ -33,6 +33,11 @@ public class MathQuiz {
         else{
             System.out.println("Wrong Answer!!!");
         }
+    }
+
+    public void finishQuiz(){
+        System.out.println("Finishing the math quiz...");
+        System.out.println("You score is: " + this.score + "/5");
     }
 
 }

@@ -7,7 +7,7 @@ public class Question {
     private char operator;
     private double correctAnswer;
 
-    public void Question(){
+    public Question(){
         Random random = new Random(); //Without a seed defined, the random method uses a seed based on the system time
 
         this.operand1 = random.nextInt(100) + 1;
@@ -38,7 +38,7 @@ public class Question {
     }
 
     public void generateQuestion() {
-        System.out.println("What is " + operand1 + " " + operator + " " + operand2 + "?");
+        System.out.println("What is " + this.operand1 + " " + operator + " " + this.operand2 + "?");
     }
 
     public boolean checkAnswer(double userAnswer) {
